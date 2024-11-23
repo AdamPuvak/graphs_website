@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafy</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1>Grafy</h1>
+        </div>
+    </header>
+
+    <nav class="nav-links">
+        <a href="#tab1" onclick="changeTab(1)">Záložka 1</a>
+        <a href="#tab2" onclick="changeTab(2)">Záložka 2</a>
+    </nav>
+
+    <section id="tab1">
+        <h2>Záložka 1</h2>
+        <div id="chart_vert" class="chart"></div>
+        <div id="chart_pie_1" class="chart"></div>
+        <div id="chart_pie_2" class="chart"></div>
+        <div id="chart_pie_3" class="chart"></div>
+        <div id="chart_pie_4" class="chart"></div>
+        <div id="chart_pie_5" class="chart"></div>
+        <div id="chart_pie_6" class="chart"></div>
+        <div id="chart_line" class="chart"></div>
+        <div class="spacer"></div>
+    </section>
+
+    <section id="tab2" style="display: none;">
+        <h2>Záložka 2</h2>
+        <div id="chart_sin_con" class="chart"></div>
+        <div id="checkbox-container">
+            <label>
+                <input type="checkbox" id="checkboxY1" checked onchange="updateGraphVisibility()">Sinus
+            </label>
+            <label>
+                <input type="checkbox" id="checkboxY2" checked onchange="updateGraphVisibility()">Cosinus
+            </label>
+        </div>
+        <button onclick="stopFetch()">Koniec</button>
+        <div id="amplitude-control">
+            <label for="amplitude-slider"></label>
+            <input type="range" id="amplitude-slider" min="1" max="10" step="1" value="1" oninput="updateAmplitudeSlider()">
+            <div id="text-control">
+                <input type="text" id="amplitude-text" value="1" onchange="updateAmplitudeText()">
+            </div>
+            <div id="amplitude-label">
+                <span id="amplitude-value">1</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Adam Puvák</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
