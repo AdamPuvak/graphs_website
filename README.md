@@ -36,6 +36,7 @@ Custom Web Component: Handles amplitude settings with configurable parameters.
 * [![HTML][HTML.com]][HTML-url]
 * [![CSS][CSS.com]][CSS-url]
 * [![JavaScript][JS.com]][JS-url]
+* [![XML][XML.com]][XML-url]  
 * [![Plotly][Plotly.com]][Plotly-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -47,6 +48,8 @@ Custom Web Component: Handles amplitude settings with configurable parameters.
 [CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [JS.com]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black  
 [JS-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[XML.com]: https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=xml&logoColor=white  
+[XML-url]: https://developer.mozilla.org/en-US/docs/Web/XML 
 [Plotly.com]: https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white  
 [Plotly-url]: https://plotly.com/javascript/
 
